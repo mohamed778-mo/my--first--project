@@ -5,6 +5,7 @@ const yargs = require("yargs");
     yargs.command({
         command:"add",
         builde:{
+            command:"list",
             fname:{
                 describe:"adding the first name",
                 demandOption:true,
