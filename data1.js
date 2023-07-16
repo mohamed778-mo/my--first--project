@@ -34,6 +34,18 @@
         fs.writeFileSync("data1.json",saveAllDatajson)
     }
     
+
+
+    
+person_obj.fname = 'Adel';
+person_obj.lname = 'Ahmed';
+person_obj.age = 40;
+person_obj.city = 'Cairo';
+
+const updated_json_data = JSON.stringify(person_obj);
+
+
+fs.writeFileSync('updated_person.json', updated_json_data);
     
     
     module.exports={
